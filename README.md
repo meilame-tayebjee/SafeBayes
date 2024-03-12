@@ -1,4 +1,4 @@
-# SafeBayes
+# Safe Bayes Linear Regression
 ## Eliot Beyler, Sébastien Melo and Meilame Tayebjee | MVA 2023-2024
 
 This project has been realised for the Bayesian Machine Learning course of the MVA master by Prof. R. Bardenet and Prof. J. Arbel.
