@@ -3,7 +3,7 @@
 
 This project has been realised for the Bayesian Machine Learning course of the MVA master by Prof. R. Bardenet and Prof. J. Arbel.
 
-We propose an implementation of the Safe Bayes Linear Regression from the article _Inconsistency of Bayesian Inference for Misspecified Linear Models, and a Proposal for Repairing It_ by P. Grünwald & T.van Ommen (2017), as well as experiments. The SafeBayes Linear Regression is a regularized Bayesian Linear Regression that is robust to model misspecification (hetereoscedasticity, corrupted data, etc.).
+We propose an implementation of the Safe Bayes Linear Regression from the article _Inconsistency of Bayesian Inference for Misspecified Linear Models, and a Proposal for Repairing It_ by P. Grünwald & T. van Ommen (2017), as well as experiments. The SafeBayes Linear Regression is a regularized Bayesian Linear Regression that is robust to model misspecification (hetereoscedasticity, corrupted data, etc.).
 
 
 The module ```SafeBayes.py``` is ready to use:
