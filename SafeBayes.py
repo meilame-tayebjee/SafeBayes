@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 import time
 from scipy.special import psi, softmax #Digamma function useful for RLogLoss
 from scipy.stats import invgamma
@@ -9,7 +8,26 @@ from scipy.stats import invgamma
 class SafeBayesLinearRegression():
 
     def __init__(self, loss = 'RLogLoss', a0 = 1, b0 = 1/40,  step_size=1, k_max=16, pmax=50, beta_0 = None, Sigma_0 = None):
-
+        """
+        Parameters:
+        -----------
+        loss : str, default = 'RLogLoss'
+            Loss function to use. Either 'RLogLoss' or 'ILogLoss'
+        a0 : float, default = 1
+            Prior shape parameter for sigma_sq
+        b0 : float, default = 1/40
+            Prior scale parameter for sigma_sq
+        step_size : int, default = 1
+            Step size for SafeBayes algorithm
+        k_max : int, default = 16
+            Maximum value for SafeBayes algorithm
+        pmax : int, default = 50
+            Maximum number of features
+        beta_0 : numpy.array, default = None
+            Prior mean for beta. If None, will be set to 0
+        Sigma_0 : numpy.array, default = None
+            Prior covariance matrix for beta. If None, will be set to the identity matrix
+        """
         if loss not in ['RLogLoss', 'ILogLoss']:
             raise ValueError('loss should be either "RLogLoss" or "ILogLoss"')
 
