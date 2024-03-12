@@ -6,7 +6,7 @@ This project has been realised for the Bayesian Machine Learning course of the M
 We propose an implementation of the Safe Bayes Linear Regression from the article _Inconsistency of Bayesian Inference for Misspecified Linear Models, and a Proposal for Repairing It_ by P. Grünwald & T.van Ommen (2017), as well as experiments. The SafeBayes Linear Regression is a regularized Bayesian Linear Regression that is robust to model misspecification (hetereoscedasticity, corrupted data, etc.).
 
 
-The module \texttt{SafeBayes} is ready to use:
+The module ```SafeBayes.py``` is ready to use:
 - Optional: Run ``` pip install -r requirements.txt ```   to install the required packages (nothing fancy, only numpy and scipy)
 - Use your data ```X, y```
 - Instantiate a ```SafeBayesLinearRegression()``` object. Default prior parameters from the article are already implemented for you, but you can customize them !
