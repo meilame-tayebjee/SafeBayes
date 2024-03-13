@@ -7,7 +7,7 @@ We propose an implementation of the Safe Bayes Linear Regression from the articl
 
 
 The module ```SafeBayes.py``` is ready to use:
-- Optional: Run ``` pip install -r requirements.txt ```   to install the required packages (nothing fancy, only numpy and scipy)
+- Optional: Run ``` pip install -r requirements.txt ```   to install the required packages (nothing fancy, only numpy and scipy)*
 - Use your data ```X, y```
 - Instantiate a ```SafeBayesLinearRegression()``` object. Default prior parameters from the article are already implemented for you, but you can customize them !
 - Calling the ```.fit(X, y)``` method will directly run the SafeBayes algorithm to find the optimal $\eta$ and yield the $\eta$-generalized posterior distributions parameters (that is mean and std of the multivariate normal for $\beta$ and shape/scale of the inverse gamma for $\sigma^2$).
@@ -18,3 +18,4 @@ If you wish not to run the SafeBayes algorithm, you can also call the ```.Genera
 Feel free to reach out to us at eliot.beyler@ens.psl.eu / sebastien.melo@polytechnique.edu / meilame.tayebjee@polytechnique.edu for any questions or recommendations !
 
 
+*Remark : to run the experiments, you also need to install matplotlib, pandas and tqdm.
